@@ -1083,6 +1083,29 @@
     $(window).on('load', function(){
         $('body').addClass('color10')
         $('#Button10').addClass('active') 
+
+
+        const searchParams = new URLSearchParams(window.location.search);
+        const currentUrl = window.location.href.substring(0, location.href.lastIndexOf("/"))
+        const fileName = window.location.href.split("/").slice(-1)
+        const div1 = document.getElementById("invitation1")
+        const div2 = document.getElementById("invitation2")
+
+        if(!searchParams.has('invitation') && fileName != '404.html'){
+            window.location.href = currentUrl + '/404.html'
+        } else {
+            if(searchParams.get('invitation') == 'all'){
+                div1.style.display = "block";
+                div2.style.display = "none";
+            } else if(searchParams.get('invitation') == 'few'){
+                div2.style.display = "block";
+                div1.style.display = "none";
+            } else if(fileName != '404.html'){
+                window.location.href = currentUrl + '/404.html'
+
+            }
+          }
+        
         if(localStorage.getItem('switerColor') == 'color1'){
             $('body').addClass('color1') 
             $('#Button1').addClass('active') 
