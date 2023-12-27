@@ -4052,7 +4052,7 @@ img {
 
 .wpo-hero-style-3 {
   position: relative;
-  height: 880px;
+  height: 800px;
 }
 @media (max-width: 1399px) {
   .wpo-hero-style-3 {
@@ -15011,5 +15011,35 @@ static-hero-s4
   }
   100% {
     margin-top: 0;
+  }
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #FFFFFF 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 1.2em;
+      font-style: italic;
+      font-weight: bold;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
   }
 }

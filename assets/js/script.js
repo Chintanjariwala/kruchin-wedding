@@ -817,7 +817,7 @@
         = COUNTDOWN CLOCK
     -------------------------------------------*/
     if ($("#clock").length) {
-        $('#clock').countdown('2024/02/15', function(event) {
+        $('#clock').countdown('2024/02/15 18:30', function(event) {
             var $this = $(this).html(event.strftime(''
             + '<div class="box"><div><div class="time">%m</div> <span>Month</span> </div></div>'
             + '<div class="box"><div><div class="time">%D</div> <span>Days</span> </div></div>'
