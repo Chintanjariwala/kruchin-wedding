@@ -1091,6 +1091,12 @@
         const div1 = document.getElementById("invitation1")
         const div2 = document.getElementById("invitation2")
 
+        const videoLink = document.getElementById('videoLink');
+        const pagePathName = window.location.pathname;
+        videoLink.href = 'assets/videos/invitation_' + (pagePathName.substring(pagePathName.lastIndexOf("/") + 1)).split(".")[0]
+        + '_' + searchParams.get('invitation') + '.mp4';
+        
+
         if(!searchParams.has('invitation') && fileName != '404.html'){
             window.location.href = currentUrl + '/404.html'
         } else {

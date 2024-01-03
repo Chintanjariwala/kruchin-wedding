@@ -15033,7 +15033,7 @@ static-hero-s4
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-      font-size: 2.5em;
+      font-size: 2em;
       font-style: italic;
       font-weight: bold;
 }
