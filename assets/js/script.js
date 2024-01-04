@@ -1096,6 +1096,7 @@
         videoLink.href = 'assets/videos/invitation_' + (pagePathName.substring(pagePathName.lastIndexOf("/") + 1)).split(".")[0]
         + '_' + searchParams.get('invitation') + '.mp4';
         
+        const pageName = (pagePathName.substring(pagePathName.lastIndexOf("/") + 1)).split(".")[0];
 
         if(!searchParams.has('invitation') && fileName != '404.html'){
             window.location.href = currentUrl + '/404.html'
@@ -1103,9 +1104,21 @@
             if(searchParams.get('invitation') == 'all'){
                 div1.style.display = "block";
                 div2.style.display = "none";
+
+                if(pageName == 'bride'){
+                    videoLink.href = 'https://onedrive.live.com/embed?resid=43302A3CF9931C7B%2121515&authkey=!AAdL396VfRgsU1U'
+                } else {
+                    videoLink.href = 'https://onedrive.live.com/embed?resid=43302A3CF9931C7B%2121516&authkey=!AKGNopie1sTxpys'
+                }
             } else if(searchParams.get('invitation') == 'few'){
                 div2.style.display = "block";
                 div1.style.display = "none";
+
+                if(pageName == 'bride'){
+                    videoLink.href = 'https://onedrive.live.com/embed?resid=43302A3CF9931C7B%2121514&authkey=!ALFV54iydpqdsWo'
+                } else {
+                    videoLink.href = 'https://onedrive.live.com/embed?resid=43302A3CF9931C7B%2121517&authkey=!ALvm362Kn4vZJl8'
+                }
             } else if(fileName != '404.html'){
                 window.location.href = currentUrl + '/404.html'
 
