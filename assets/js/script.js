@@ -1106,18 +1106,18 @@
                 div2.style.display = "none";
 
                 if(pageName == 'bride'){
-                    videoLink.href = 'https://onedrive.live.com/embed?resid=43302A3CF9931C7B%2121515&authkey=!AAdL396VfRgsU1U'
+                    videoLink.href = 'https://www.youtube.com/embed/lvQaLazYluo'
                 } else {
-                    videoLink.href = 'https://onedrive.live.com/embed?resid=43302A3CF9931C7B%2121516&authkey=!AKGNopie1sTxpys'
+                    videoLink.href = 'https://www.youtube.com/embed/6oc_kAHJ928'
                 }
             } else if(searchParams.get('invitation') == 'few'){
                 div2.style.display = "block";
                 div1.style.display = "none";
 
                 if(pageName == 'bride'){
-                    videoLink.href = 'https://onedrive.live.com/embed?resid=43302A3CF9931C7B%2121514&authkey=!ALFV54iydpqdsWo'
+                    videoLink.href = 'https://www.youtube.com/embed/xAP9hjh_-Iw'
                 } else {
-                    videoLink.href = 'https://onedrive.live.com/embed?resid=43302A3CF9931C7B%2121517&authkey=!ALvm362Kn4vZJl8'
+                    videoLink.href = 'https://www.youtube.com/embed/TFLJC9iyi5Y'
                 }
             } else if(fileName != '404.html'){
                 window.location.href = currentUrl + '/404.html'
